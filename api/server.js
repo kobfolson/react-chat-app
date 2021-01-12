@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 const port = process.env.PORT || 5000;
-app.use(express.static(path.join(__dirname, '../buld')));
+app.use(express.static(path.join(__dirname, '../build')));
 
 io.on('connection', (socket) => {
   socketManager(socket, io);
