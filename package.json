@@ -1,0 +1,62 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "material-icons": "^0.3.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.11.11",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "react-scroll-to-bottom": "^4.0.0",
+    "resolve-url-loader": "^3.1.2",
+    "socket.io": "^3.0.5",
+    "socket.io-client": "^2.3.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "node api/server.js",
+    "server": "nodemon api/server.js",
+    "dev": "concurrently 'npm run server' 'npm run client'",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+  },
+  "engines": {
+    "node": "15.4.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7",
+    "sass": "^1.29.0"
+  },
+  "proxy": "http://localhost:5000"
+}
