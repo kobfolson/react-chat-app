@@ -1,5 +1,5 @@
 import createDataContext from './createDataContext';
-import io from 'socket.io-client';
+import io from 'socket.io/client-dist/socket.io';
 
 const socket = io('/');
 
