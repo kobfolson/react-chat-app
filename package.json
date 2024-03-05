@@ -18,7 +18,7 @@
     "react-dom": "^16.13.1",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll-to-bottom": "^4.0.0",
     "resolve-url-loader": "^3.1.2",
     "socket.io": "^3.0.5",
